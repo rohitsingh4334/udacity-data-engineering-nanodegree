@@ -6,5 +6,5 @@ udacity nanodegree course projects.
 .
 └── data-model         
     ├── casssandra-data-model   # project solution of cassandra data modeling
-    └── postgres-data-model     # proeject solution of postgresql data modeling
+    └── postgres-data-model     # project solution of postgresql data modeling
 ```
