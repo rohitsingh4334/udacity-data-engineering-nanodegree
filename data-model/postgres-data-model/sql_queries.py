@@ -1,10 +1,10 @@
 # DROP TABLES
 
-songplay_table_drop = "drop table if exists songplays_fact;"
-user_table_drop = "drop table if exists users_dim;"
-song_table_drop = "drop table if exists songs_dim;"
-artist_table_drop = "drop table if exists artists_dim;"
-time_table_drop = "drop table if exists time_dim;"
+songplay_table_drop = "drop table if exists songplays;"
+user_table_drop = "drop table if exists users;"
+song_table_drop = "drop table if exists songs;"
+artist_table_drop = "drop table if exists artists;"
+time_table_drop = "drop table if exists time;"
 
 # CREATE TABLES
 
