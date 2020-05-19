@@ -7,7 +7,6 @@ udacity nanodegree course projects.
 ├── capstone_project                                    # capstone project for udacity data engineering nanodegree.
 │   ├── data
 │   │   ├── etl
-│   │   │   └── __pycache__
 │   │   ├── output
 │   │   │   ├── dimensions
 │   │   │   │   ├── airports.parquet
@@ -15,11 +14,6 @@ udacity nanodegree course projects.
 │   │   │   │   └── temperature.parquet
 │   │   │   └── fact
 │   │   │       └── immigrations_fact.parquet
-│   │   │           └── arrival_year=2016
-│   │   │               └── arrival_month=04
-│   │   │                   ├── arrival_day=29
-│   │   │                   └── arrival_day=30
-│   │   ├── __pycache__
 │   │   └── sas_data
 │   └── temperature
 │       └── data2
