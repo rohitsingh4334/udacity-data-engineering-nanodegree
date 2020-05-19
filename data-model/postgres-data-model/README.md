@@ -42,7 +42,8 @@ user_id int,
 first_name varchar,
 last_name varchar,
 gender varchar,
-level varchar
+level varchar,
+Pirmary key(user_id)
 );
 ```
 
@@ -52,7 +53,8 @@ artist_id varchar,
 name varchar, 
 location text, 
 latitude decimal(10,5), 
-longitude decimal(10,5)
+longitude decimal(10,5),
+Pirmary key(artist_id)
 );
 ```
 
@@ -64,7 +66,8 @@ day int,
 week int, 
 month int, 
 year int, 
-weekday int
+weekday int,
+Pirmary key(start_time)
 );
 ```
 
@@ -72,13 +75,14 @@ weekday int
 create table if not exists songplays(
 songplay_id SERIAL,
 start_time timestamp,
-user_id int,
-level varchar,
-song_id varchar,
-artist_id varchar,
-session_id int,
+user_id int not null,
+level varchar not null,
+song_id varchar not null,
+artist_id varchar not null,
+session_id int not null,
 location text,
-user_agent text
+user_agent text,
+Pirmary key(songplay_id)
 );
 ```
 
@@ -87,11 +91,11 @@ intial commands:
 1. ``` python create_tables.py # to create table in sparkifydb```
 2. ``` python etl.py # to add data into tables.```
 
-### Sonplay Analysis:
+### Songlay Analysis:
 
-Q1: Top most atrist name:
+Q1: Top most artist name:
 
-select a.name as artist_name, count(*) from songplays s join artists a on s.artist_id=a.artist_id  group by a.name order by count(*) desc;
+select a.name as artist_name, count(*) from songplays s join artists a on s.artist_id=a.artist_id  group by a.name order by count(*) desc limit 1;
 
 ```
  artist_name | count 
